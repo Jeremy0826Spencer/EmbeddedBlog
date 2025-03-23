@@ -1,19 +1,15 @@
 {
   "files": {
     "main.css": "/EmbeddedBlog/static/css/main.f163a5ad.css",
-    "main.js": "/EmbeddedBlog/static/js/main.d4d2e9db.js",
+    "main.js": "/EmbeddedBlog/static/js/main.d3aa30a2.js",
     "static/js/453.6c976b35.chunk.js": "/EmbeddedBlog/static/js/453.6c976b35.chunk.js",
-    "static/media/20250323_094016.jpg": "/EmbeddedBlog/static/media/20250323_094016.61a5b0f5db5d6ebd6d41.jpg",
-    "static/media/20250323_094021.jpg": "/EmbeddedBlog/static/media/20250323_094021.2299e4fa9eb5541eb24a.jpg",
-    "static/media/20250323_094007.jpg": "/EmbeddedBlog/static/media/20250323_094007.710f4846182bd52d1fc0.jpg",
-    "static/media/20250323_094112.jpg": "/EmbeddedBlog/static/media/20250323_094112.e6126f37d26ca2b50fe2.jpg",
     "index.html": "/EmbeddedBlog/index.html",
     "main.f163a5ad.css.map": "/EmbeddedBlog/static/css/main.f163a5ad.css.map",
-    "main.d4d2e9db.js.map": "/EmbeddedBlog/static/js/main.d4d2e9db.js.map",
+    "main.d3aa30a2.js.map": "/EmbeddedBlog/static/js/main.d3aa30a2.js.map",
     "453.6c976b35.chunk.js.map": "/EmbeddedBlog/static/js/453.6c976b35.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f163a5ad.css",
-    "static/js/main.d4d2e9db.js"
+    "static/js/main.d3aa30a2.js"
   ]
 }
