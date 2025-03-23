@@ -1,0 +1,112 @@
+/* Global Styles */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f9fafb;
+  color: #1f2937;
+  line-height: 1.6;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, #3b82f6, #1e3a8a);
+  color: white;
+  text-align: center;
+  padding: 4rem 1rem;
+}
+.hero h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.hero p {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+}
+
+/* Tutorial Content */
+.tutorial-content {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Titles */
+.section-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #2563eb;
+}
+
+.section-text {
+  font-size: 1.1rem;
+  color: #374151;
+}
+
+/* Materials List */
+.materials-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+.materials-list li {
+  background: #e0f2fe;
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  border-radius: 5px;
+}
+
+/* Steps */
+.step {
+  border-left: 4px solid #2563eb;
+  padding-left: 1rem;
+  margin-bottom: 2rem;
+}
+.step-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+/* Wiring Diagram */
+.code-block {
+  background: #1e293b;
+  color: #f3f4f6;
+  padding: 1rem;
+  border-radius: 5px;
+  font-family: 'Courier New', monospace;
+  overflow-x: auto;
+  white-space: pre-wrap;
+}
+
+/* Images */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+.grid img:hover {
+  transform: scale(1.05);
+}
+
+/* Functioning OLED Image */
+.functioning-oled {
+  text-align: center;
+  margin-top: 2rem;
+}
+.functioning-oled img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}

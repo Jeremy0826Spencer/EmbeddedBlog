@@ -1,25 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import ProjectsPage from "./components/project_page_component/ProjectPage";
+import AboutPage from "./components/about_page_component/AboutPage";
+import HomePage from "./components/home_page_component/HomePage";
+import Navbar from "./components/nav_bar_component/Navbar";
+import TempHumidTutorial from "./components/temp_humid_sensor_tutorial_component/TempHumidTutorial";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/projects" element={<ProjectsPage />} />
+        <Route
+          path="/projects/temp-humid-tutorial"
+          element={<TempHumidTutorial />}
+        />
+      </Routes>
+    </Router>
   );
 }
 
