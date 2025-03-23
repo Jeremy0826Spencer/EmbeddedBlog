@@ -1,9 +1,5 @@
 import React from "react";
 import "./TempHumidTutorial.css"; // Import the CSS file
-import wiringImage1 from "../../images/20250323_094007.jpg"
-import wiringImage2 from "../../images/20250323_094016.jpg";
-import wiringImage3 from "../../images/20250323_094021.jpg";
-import workingScreen from "../../images/20250323_094112.jpg";
 
 const TempHumidTutorial: React.FC = () => {
   return (
@@ -80,17 +76,17 @@ const TempHumidTutorial: React.FC = () => {
                 {/* Images */}
                 <div className="mt-4 grid grid-cols-1 md:grid-cols-3 gap-4">
                   <img
-                    src={wiringImage1}
+                    src={`${process.env.PUBLIC_URL}/images/20250323_094007.jpg`}
                     alt="Wiring setup for ESP32 and DHT11"
                     className="rounded-lg shadow-md"
                   />
                   <img
-                    src={wiringImage2}
+                    src={`${process.env.PUBLIC_URL}/images/20250323_094016.jpg`}
                     alt="Close-up of ESP32 wiring"
                     className="rounded-lg shadow-md"
                   />
                   <img
-                    src={wiringImage3}
+                    src={`${process.env.PUBLIC_URL}/images/20250323_094021.jpg`}
                     alt="Completed wiring for the project"
                     className="rounded-lg shadow-md"
                   />
@@ -226,10 +222,11 @@ void loop() {
           </div>
         </div>
 
+        {/* Working Screen Image */}
         <div className="mt-4 grid grid-cols-1 md:grid-cols-3 gap-4">
           <img
-            src={workingScreen}
-            alt="Oled with temperature and humidity"
+            src={`${process.env.PUBLIC_URL}/images/20250323_094112.jpg`}
+            alt="OLED display showing temperature and humidity"
             className="rounded-lg shadow-md"
           />
         </div>
