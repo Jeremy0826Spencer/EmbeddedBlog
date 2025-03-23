@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/EmbeddedBlog/static/css/main.f163a5ad.css",
-    "main.js": "/EmbeddedBlog/static/js/main.d3aa30a2.js",
-    "static/js/453.6c976b35.chunk.js": "/EmbeddedBlog/static/js/453.6c976b35.chunk.js",
-    "index.html": "/EmbeddedBlog/index.html",
-    "main.f163a5ad.css.map": "/EmbeddedBlog/static/css/main.f163a5ad.css.map",
-    "main.d3aa30a2.js.map": "/EmbeddedBlog/static/js/main.d3aa30a2.js.map",
-    "453.6c976b35.chunk.js.map": "/EmbeddedBlog/static/js/453.6c976b35.chunk.js.map"
+    "main.css": "/static/css/main.f163a5ad.css",
+    "main.js": "/static/js/main.1e3c0c6f.js",
+    "static/js/453.6c976b35.chunk.js": "/static/js/453.6c976b35.chunk.js",
+    "index.html": "/index.html",
+    "main.f163a5ad.css.map": "/static/css/main.f163a5ad.css.map",
+    "main.1e3c0c6f.js.map": "/static/js/main.1e3c0c6f.js.map",
+    "453.6c976b35.chunk.js.map": "/static/js/453.6c976b35.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f163a5ad.css",
-    "static/js/main.d3aa30a2.js"
+    "static/js/main.1e3c0c6f.js"
   ]
 }
