@@ -9,7 +9,7 @@ const TempHumidTutorial: React.FC = () => {
         <h1>ESP32 Temperature & Humidity Sensor Tutorial</h1>
         <p>
           Learn how to build a real-time temperature and humidity monitoring
-          system using an ESP32 microcontroller, DHT11 sensor, and an OLED
+          system using an ESP32 microcontroller, a DHT11 sensor, and an OLED
           display.
         </p>
       </section>
@@ -47,9 +47,14 @@ const TempHumidTutorial: React.FC = () => {
             <div className="step">
               <h3 className="step-title">Step 1: Wiring the Components</h3>
               <p className="section-text">
-                Connect the DHT11 sensor and OLED display to the ESP32 using the
+                Connect the DHT11 sensor and OLED display to the ESP32 using a
                 breadboard and jumper wires. Refer to the wiring diagram and
-                images below.
+                images provided below. Note that the ESP32 is too wide for most
+                breadboards. There are several ways to handle this issue: some
+                people cut a breadboard in half, while others, like me, use two
+                separate breadboards. However, this method can be a tight fit,
+                so be careful not to damage the GPIO pins when connecting the
+                components.
               </p>
               {/* Wiring Diagram and Images */}
               <div className="bg-gray-200 p-4 mt-4 rounded-lg">
@@ -101,7 +106,11 @@ const TempHumidTutorial: React.FC = () => {
               </h3>
               <p className="section-text">
                 Install the necessary libraries for the DHT11 sensor and OLED
-                display in the Arduino IDE or PlatformIO.
+                display in the Arduino IDE or PlatformIO. Simply copy and paste
+                the code below into your <strong>platformio.ini</strong> file. I
+                might also add a separate section on how to set up PlatformIO,
+                which is the IDE used for this project. Personally, I use Visual
+                Studio Code with the PlatformIO extension for development.
               </p>
               <pre className="code-block">
                 <code>
@@ -130,7 +139,11 @@ lib_deps =
               <h3 className="step-title">Step 3: Writing the Code</h3>
               <p className="section-text">
                 Write the code to read data from the DHT11 sensor and display it
-                on the OLED screen using the U8g2 library.
+                on the OLED screen using the U8g2 library. This code will go in
+                your <strong>main.cpp</strong> file. Once everything is
+                connected, all you need to do is connect a USB-C cable from your
+                computer (with PlatformIO running), build the project, and flash
+                the code onto the ESP32.
               </p>
               <pre className="code-block">
                 <code>
@@ -205,18 +218,25 @@ void loop() {
 
             {/* Step 4 */}
             <div className="step">
-              <h3 className="step-title">Step 4: Uploading the Code</h3>
+              <h3 className="step-title">Step 4: Create the Project</h3>
               <p className="section-text">
                 1. Connect your ESP32 to your computer via USB.
                 <br />
-                2. Select the correct board and port in PlatformIO or Arduino
-                IDE:
-                <br />- <strong>Board:</strong> ESP32 Dev Module
-                <br />- <strong>Port:</strong> Select the correct COM port
+                2. Name the project, select the board as{" "}
+                <strong>Espressif ESP32 Dev Module</strong>, and choose{" "}
+                <strong>Arduino</strong> as the framework.
                 <br />
-                3. Click the <strong>Upload</strong> button.
+                3. Click the <strong>Finish</strong> button.
                 <br />
-                4. Open the Serial Monitor to verify the output.
+                4. Copy and paste the above code into the{" "}
+                <strong>platformio.ini</strong> and <strong>main.cpp</strong>{" "}
+                files.
+                <br />
+                5. Press the checkmark to build your code. Debug any errors if
+                necessary. Then, press the right arrow button to flash the
+                program onto the board. You can now use the plug icon to monitor
+                the output via the serial monitor or view the data on the OLED
+                screen.
               </p>
             </div>
           </div>

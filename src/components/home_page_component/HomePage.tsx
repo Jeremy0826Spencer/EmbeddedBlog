@@ -54,7 +54,7 @@ const HomePage: React.FC = () => {
       <section className="cta">
         <h2>Want to see more projects?</h2>
         <p>More projects to come soon!</p>
-        <button>Browse All Projects</button>
+        <button onClick={() => {navigate("/projects");}}>Browse All Projects</button>
       </section>
     </div>
   );
