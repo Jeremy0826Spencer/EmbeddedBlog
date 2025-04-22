@@ -31,10 +31,53 @@ const TempHumidTutorial: React.FC = () => {
         <div className="mb-12">
           <h2 className="section-title">Materials Needed</h2>
           <ul className="materials-list">
-            <li>ESP32 Development Board (ESP-WROOM-32)</li>
-            <li>DHT11 Temperature & Humidity Sensor</li>
-            <li>1.3 Inch I2C OLED Display (SH1106)</li>
-            <li>Breadboard and Jumper Wires</li>
+            <li>
+              <a
+                href="https://amzn.to/3YHgZeA"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                ESP32 Development Board (ESP-WROOM-32)
+              </a>{" "}
+              – I used this one
+            </li>
+            <li>
+              <a
+                href="https://amzn.to/3YHgZeA"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                DHT11 Temperature & Humidity Sensor
+              </a>{" "}
+              – I used this one
+            </li>
+            <li>
+              <a
+                href="https://amzn.to/3YHgZeA"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                1.3 Inch I2C OLED Display (SH1106)
+              </a>{" "}
+              – These are a cool little screen
+            </li>
+            <li>
+              <a
+                href="https://amzn.to/3YHgZeA"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Breadboard
+              </a>{" "}
+              and
+              <a
+                href="https://amzn.to/4jCYAHU"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Jumper Wires
+              </a>
+            </li>
             <li>USB Cable for Power</li>
           </ul>
         </div>
