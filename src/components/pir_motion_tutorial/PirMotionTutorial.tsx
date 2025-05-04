@@ -75,13 +75,11 @@ const PirMotionTutorial: React.FC = () => {
         <div className="mb-12">
           <h2 className="section-title">Step-by-Step Instructions</h2>
           <div className="space-y-6">
-            {/* Step 1 */}
+            {/* Step 1 - Updated with wiring images */}
             <div className="step">
               <h3 className="step-title">Step 1: Wiring the Components</h3>
               <p className="section-text">
-                Connect the HC-SR501 sensor to the ESP32. The PIR sensor has
-                three pins: VCC, OUT, and GND. Make sure to connect them
-                properly to avoid damage.
+                Connect the HC-SR501 sensor to the ESP32 as shown below:
               </p>
 
               <div className="bg-gray-200 p-4 mt-4 rounded-lg">
@@ -94,17 +92,23 @@ const PirMotionTutorial: React.FC = () => {
                   - PIR GND → ESP32 GND
                   <br />- PIR OUT → ESP32 GPIO13
                 </p>
-                {/* Placeholder for images - add your actual image paths */}
-                <div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+
+                {/* Wiring Images Grid */}
+                <div className="mt-4 grid grid-cols-1 md:grid-cols-3 gap-4">
                   <img
-                    src="/images/pir-wiring.jpg"
-                    alt="PIR sensor wiring diagram"
-                    className="rounded-lg shadow-md"
+                    src="/images/wiringmotionsensoronly.jpg"
+                    alt="PIR sensor wiring diagram - front view"
+                    className="rounded-lg shadow-md border border-gray-300"
                   />
                   <img
-                    src="/images/pir-esp32-setup.jpg"
-                    alt="Completed PIR sensor setup"
-                    className="rounded-lg shadow-md"
+                    src="/images/wiringmotionsensoronly2.jpg"
+                    alt="PIR sensor wiring diagram - side view"
+                    className="rounded-lg shadow-md border border-gray-300"
+                  />
+                  <img
+                    src="/images/wiringmotionsensoronly3.jpg"
+                    alt="PIR sensor wiring diagram - close-up"
+                    className="rounded-lg shadow-md border border-gray-300"
                   />
                 </div>
               </div>
@@ -187,10 +191,38 @@ void loop() {
               </pre>
             </div>
 
-            {/* Step 4 */}
+            {/* New Step 4: Expected Output */}
+            <div className="step">
+              <h3 className="step-title">Step 4: Expected Output</h3>
+              <p className="section-text">
+                When motion is detected, you'll see output in your serial
+                monitor:
+              </p>
+
+              <div className="bg-gray-800 text-gray-100 p-4 rounded-lg mt-4">
+                <h4 className="font-semibold mb-2">Serial Monitor Output</h4>
+                <img
+                  src="/images/Screenshot_motionsensoronlyoutput.jpg"
+                  alt="Serial monitor showing motion detection output"
+                  className="rounded-lg border border-gray-600 max-w-full h-auto"
+                />
+                <pre className="mt-4 text-green-400">
+                  <code>
+                    {`Initializing PIR sensor...
+Stabilizing... 20 seconds remaining
+...
+System ready
+Motion detected!
+Motion ended`}
+                  </code>
+                </pre>
+              </div>
+            </div>
+
+            {/* Step 5 (renumbered from original Step 4) */}
             <div className="step">
               <h3 className="step-title">
-                Step 4: Troubleshooting False Triggers
+                Step 5: Troubleshooting False Triggers
               </h3>
               <p className="section-text">
                 If you're getting false triggers, try these solutions:
