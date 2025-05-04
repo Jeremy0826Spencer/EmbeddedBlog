@@ -17,7 +17,7 @@ const HomePage: React.FC = () => {
           journey of learning how to make whatever we want. Join me as we dive
           into the fascinating realms of microcontrollers, embedded programming,
           and IoT development. Whether you're a beginner or an experienced
-          enthusiast, let’s learn, build, and innovate together.
+          enthusiast, let's learn, build, and innovate together.
         </p>
       </section>
 
@@ -27,21 +27,39 @@ const HomePage: React.FC = () => {
         <div className="projects-grid">
           {[
             {
-              title:
-                "ESP32 With Temperature and Humidity Sensor and OLED Screen",
-              desc: "Live data from sensors displayed in real-time.",
+              title: "ESP32 Temperature & Humidity Monitor",
+              desc: "Live sensor data displayed on OLED screen in real-time.",
+              image: "/images/20250323_094112.jpg",
+              path: "/projects/temp-humid-tutorial",
+            },
+            {
+              title: "ESP32 Motion Detection System",
+              desc: "PIR motion sensor with visual feedback on OLED display.",
+              image: "/images/oledmotionsensor4.jpg",
+              path: "/projects/pir-motion-tutorial",
+            },
+            {
+              title: "ESP32 Ultrasonic Distance Sensor",
+              desc: "Accurate distance measurements with HC-SR04P sensor.",
+              image: "/images/distance_sensor_wiring.jpg",
+              path: "/projects/distance-sensor-tutorial",
             },
           ].map((project, index) => (
             <div key={index} className="project-card">
+              <div className="project-image-container">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="project-image"
+                />
+                <div className="project-image-overlay"></div>
+              </div>
               <div className="project-card-content">
                 <h3>{project.title}</h3>
                 <p>{project.desc}</p>
               </div>
               <div className="project-card-footer">
-                {/* Navigate to the TempHumidTutorial page */}
-                <button
-                  onClick={() => navigate("/projects/temp-humid-tutorial")}
-                >
+                <button onClick={() => navigate(project.path)}>
                   Learn More →
                 </button>
               </div>
@@ -53,8 +71,10 @@ const HomePage: React.FC = () => {
       {/* Call to Action */}
       <section className="cta">
         <h2>Want to see more projects?</h2>
-        <p>More projects to come soon!</p>
-        <button onClick={() => {navigate("/projects");}}>Browse All Projects</button>
+        <p>Explore our growing collection of embedded systems tutorials.</p>
+        <button onClick={() => navigate("/projects")}>
+          Browse All Projects
+        </button>
       </section>
     </div>
   );

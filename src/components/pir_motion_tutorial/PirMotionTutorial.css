@@ -1,0 +1,302 @@
+/* PirMotionTutorial.css */
+
+/* Container Styles */
+.pir-motion-container {
+  font-family: 'Inter', sans-serif;
+  background-color: #f9fafb;
+  color: #1f2937;
+  line-height: 1.6;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Hero Section */
+.pir-motion-hero {
+  background: linear-gradient(135deg, #3b82f6, #1e3a8a);
+  color: white;
+  text-align: center;
+  padding: 4rem 1rem;
+  border-radius: 0 0 10px 10px;
+  margin-bottom: 2rem;
+}
+
+.pir-motion-hero h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.pir-motion-hero p {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+}
+
+/* Content Section */
+.pir-motion-content {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Section Headers */
+.pir-motion-content h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 2rem 0 1rem;
+  color: #2563eb;
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: 0.5rem;
+}
+
+.pir-motion-content h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 1.5rem 0 0.5rem;
+  color: #1e40af;
+}
+
+.pir-motion-content h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 1rem 0 0.5rem;
+  color: #1e3a8a;
+}
+
+/* Materials Section */
+.materials-section {
+  margin-bottom: 2rem;
+}
+
+.materials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.materials-card {
+  background: #f8fafc;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.materials-card h3 {
+  margin-top: 0;
+}
+
+.materials-card ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.materials-card li {
+  background: #e0f2fe;
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  border-radius: 5px;
+}
+
+.materials-card a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.materials-card a:hover {
+  text-decoration: underline;
+}
+
+/* Steps Section */
+.steps-section {
+  margin-bottom: 2rem;
+}
+
+.steps-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.step {
+  border-left: 4px solid #2563eb;
+  padding-left: 1.5rem;
+  margin-left: -1.5rem;
+}
+
+/* Wiring Section */
+.wiring-section {
+  margin: 1.5rem 0;
+}
+
+.wiring-diagram {
+  background: #f8fafc;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+.wiring-diagram p {
+  font-family: 'Courier New', monospace;
+  background: #f3f4f6;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.wiring-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.wiring-images img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.wiring-images img:hover {
+  transform: scale(1.03);
+}
+
+/* Code Section */
+.code-section {
+  margin: 1.5rem 0;
+}
+
+.code-section pre {
+  background: #1e293b;
+  color: #f3f4f6;
+  padding: 1rem;
+  border-radius: 5px;
+  overflow-x: auto;
+}
+
+.code-section code {
+  font-family: 'Courier New', monospace;
+  white-space: pre-wrap;
+  line-height: 1.5;
+}
+
+/* Output Section */
+.output-section {
+  margin: 1.5rem 0;
+}
+
+.serial-output {
+  background: #f8fafc;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+.serial-output img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.serial-output pre {
+  background: #f3f4f6;
+  padding: 1rem;
+  border-radius: 5px;
+  overflow-x: auto;
+}
+
+.serial-output code {
+  font-family: 'Courier New', monospace;
+}
+
+.enhanced-output {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.oled-states {
+  margin-top: 1.5rem;
+}
+
+.oled-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.oled-images div {
+  text-align: center;
+}
+
+.oled-images img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.oled-images p {
+  margin-top: 0.5rem;
+  font-weight: 500;
+}
+
+/* Conclusion Section */
+.conclusion-section {
+  margin: 2rem 0;
+  padding-top: 1rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+/* CTA Section */
+.pir-motion-cta {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.pir-motion-cta button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pir-motion-cta button:hover {
+  background: #1d4ed8;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .pir-motion-hero h1 {
+    font-size: 2rem;
+  }
+  
+  .pir-motion-hero p {
+    font-size: 1rem;
+  }
+  
+  .pir-motion-content {
+    padding: 1.5rem;
+  }
+  
+  .materials-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .step {
+    padding-left: 1rem;
+    margin-left: -1rem;
+  }
+}

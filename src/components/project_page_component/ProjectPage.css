@@ -1,41 +1,45 @@
-/* Projects Page Styles */
+/* Main Container */
 .projects-container {
-  font-family: 'Inter', sans-serif;
-  background-color: #f9fafb;
-  color: #1f2937;
-  line-height: 1.6;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
 }
 
 /* Hero Section */
 .projects-hero {
-  background: linear-gradient(135deg, #3b82f6, #1e3a8a);
-  color: white;
   text-align: center;
-  padding: 5rem 1rem;
-  margin-bottom: 3rem;
+  padding: 4rem 0;
+  margin-bottom: 2rem;
 }
 
 .projects-hero h1 {
-  font-size: 2.8rem;
-  font-weight: 800;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2d3748;
   margin-bottom: 1rem;
 }
 
-/* Projects Grid Section */
-.projects-section {
-  max-width: 1200px;
+.projects-hero p {
+  font-size: 1.25rem;
+  color: #4a5568;
+  max-width: 800px;
   margin: 0 auto;
-  padding: 0 1rem 4rem;
+}
+
+/* Projects Section */
+.projects-section {
+  margin-bottom: 4rem;
 }
 
 .projects-section h2 {
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: 600;
+  color: #2d3748;
   text-align: center;
-  margin-bottom: 3rem;
-  color: #1e40af;
+  margin-bottom: 2rem;
 }
 
+/* Projects Grid */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
@@ -45,18 +49,18 @@
 /* Project Card */
 .project-card {
   background: white;
-  border-radius: 10px;
+  border-radius: 0.5rem;
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 .project-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
 }
 
 .project-image-container {
+  position: relative;
   height: 200px;
   overflow: hidden;
 }
@@ -65,11 +69,20 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.5s ease;
+  transition: transform 0.3s ease;
 }
 
 .project-card:hover .project-image {
   transform: scale(1.05);
+}
+
+.project-image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
 }
 
 .project-content {
@@ -77,58 +90,238 @@
 }
 
 .project-content h3 {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   font-weight: 600;
-  margin-bottom: 0.75rem;
-  color: #1e3a8a;
+  color: #2d3748;
+  margin-bottom: 0.5rem;
 }
 
 .project-content p {
-  color: #4b5563;
+  color: #4a5568;
   margin-bottom: 1.5rem;
-  line-height: 1.5;
+  min-height: 60px;
 }
 
+/* Buttons */
 .project-button {
   display: inline-block;
-  background-color: #3b82f6;
+  background-color: #4299e1;
   color: white;
   padding: 0.75rem 1.5rem;
-  border-radius: 6px;
-  font-weight: 500;
-  text-decoration: none;
+  border-radius: 0.25rem;
+  font-weight: 600;
   transition: background-color 0.3s ease;
+  border: none;
+  cursor: pointer;
 }
 
 .project-button:hover {
-  background-color: #2563eb;
+  background-color: #3182ce;
+}
+
+/* CTA Section */
+.projects-cta {
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.projects-cta h2 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 1.5rem;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #4299e1;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.25rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  background-color: #3182ce;
 }
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
+  .projects-hero {
+    padding: 2rem 0;
+  }
+  
   .projects-hero h1 {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
   
   .projects-grid {
     grid-template-columns: 1fr;
   }
-  
-  .project-image-container {
-    height: 180px;
-  }
+}/* Main Container */
+.projects-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
 }
 
-@media (max-width: 480px) {
+/* Hero Section */
+.projects-hero {
+  text-align: center;
+  padding: 4rem 0;
+  margin-bottom: 2rem;
+}
+
+.projects-hero h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2d3748;
+  margin-bottom: 1rem;
+}
+
+.projects-hero p {
+  font-size: 1.25rem;
+  color: #4a5568;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Projects Section */
+.projects-section {
+  margin-bottom: 4rem;
+}
+
+.projects-section h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #2d3748;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Projects Grid */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+/* Project Card */
+.project-card {
+  background: white;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-image-container {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-image {
+  transform: scale(1.05);
+}
+
+.project-image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+}
+
+.project-content {
+  padding: 1.5rem;
+}
+
+.project-content h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 0.5rem;
+}
+
+.project-content p {
+  color: #4a5568;
+  margin-bottom: 1.5rem;
+  min-height: 60px;
+}
+
+/* Buttons */
+.project-button {
+  display: inline-block;
+  background-color: #4299e1;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.25rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.project-button:hover {
+  background-color: #3182ce;
+}
+
+/* CTA Section */
+.projects-cta {
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.projects-cta h2 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 1.5rem;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #4299e1;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.25rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  background-color: #3182ce;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
   .projects-hero {
-    padding: 3rem 1rem;
+    padding: 2rem 0;
   }
   
   .projects-hero h1 {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
   
-  .projects-section h2 {
-    font-size: 1.5rem;
+  .projects-grid {
+    grid-template-columns: 1fr;
   }
 }

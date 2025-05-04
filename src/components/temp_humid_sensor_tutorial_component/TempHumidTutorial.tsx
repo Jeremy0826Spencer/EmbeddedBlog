@@ -1,7 +1,13 @@
 import React from "react";
 import "./TempHumidTutorial.css"; // Import the CSS file
+import { useNavigate } from "react-router-dom";
+
+
 
 const TempHumidTutorial: React.FC = () => {
+
+  const navigate = useNavigate();
+
   return (
     <div className="min-h-screen bg-gray-100 text-gray-900">
       {/* Hero Section */}
@@ -59,7 +65,7 @@ const TempHumidTutorial: React.FC = () => {
               >
                 1.3 Inch I2C OLED Display (SH1106)
               </a>{" "}
-              – These are a cool little screen
+              – This is a cool little screen
             </li>
             <li>
               <a
@@ -288,7 +294,7 @@ void loop() {
         {/* Working Screen Image */}
         <div className="mt-4 grid grid-cols-1 md:grid-cols-3 gap-4">
           <img
-            src={`${process.env.PUBLIC_URL}/images/20250323_094112.jpg`}
+            src={`/images/20250323_094112.jpg`}
             alt="OLED display showing temperature and humidity"
             className="rounded-lg shadow-md"
           />
@@ -312,7 +318,9 @@ void loop() {
           Explore our collection of embedded systems and IoT tutorials to take
           your skills to the next level.
         </p>
-        <button className="cta-button">Browse All Tutorials</button>
+        <button className="cta-button" onClick={()=> navigate("/projects")}>
+          Browse All Tutorials
+        </button>
       </section>
     </div>
   );
