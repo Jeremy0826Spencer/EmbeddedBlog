@@ -16,8 +16,13 @@ const HomePage: React.FC = () => {
           science degree and a passion for programming, I am here to share my
           journey of learning how to make whatever we want. Join me as we dive
           into the fascinating realms of microcontrollers, embedded programming,
-          and IoT development. Whether you're a beginner or an experienced
-          enthusiast, let's learn, build, and innovate together.
+          and IoT development. If you're interested in 3D models or supporting
+          content creation,{" "}
+          <span className="nav-link" onClick={() => navigate("/about")}>
+            visit the About page
+          </span>
+          . Whether you're a beginner or an experienced enthusiast, let's learn,
+          build, and innovate together.
         </p>
       </section>
 

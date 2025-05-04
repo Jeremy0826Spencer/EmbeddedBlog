@@ -1,0 +1,102 @@
+/* Main container */
+.about-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f9fa;
+  padding: 2rem;
+}
+
+/* Content wrapper */
+.about-content {
+  max-width: 800px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 3rem;
+  text-align: center;
+}
+
+/* Title styling */
+.about-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 2rem;
+}
+
+/* Description text */
+.about-description {
+  margin-bottom: 3rem;
+  line-height: 1.8;
+  color: #34495e;
+}
+
+.about-description p {
+  margin-bottom: 1.5rem;
+}
+
+/* Printables link */
+.printables-link {
+  display: inline-block;
+  background-color: #3498db;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+}
+
+.printables-link:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+}
+
+/* Support section */
+.support-section {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid #eee;
+}
+
+.support-section p {
+  margin-bottom: 1.5rem;
+  color: #7f8c8d;
+}
+
+/* Patreon button */
+.patreon-button {
+  display: inline-block;
+  background-color: #ff424d;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.patreon-button:hover {
+  background-color: #e62935;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(230, 41, 53, 0.3);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .about-content {
+    padding: 2rem 1.5rem;
+  }
+  
+  .about-title {
+    font-size: 2rem;
+  }
+  
+  .patreon-button {
+    padding: 0.8rem 1.5rem;
+  }
+}
